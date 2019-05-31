@@ -5,10 +5,11 @@ window.addEventListener('portalactivate', e => {
   const object = image.querySelector('object')
 
   const predecessor = e.adoptPredecessor()
-  image.style.width = '100vw'
-  image.style.height = '100vh'
-  object.classList.add('shadow')
   embed.appendChild(predecessor)
+  requestAnimationFrame(() => {
+    lightbox.style.opacity = '0.75'
+    object.classList.add('shadow')
+  })
 
   lightbox.addEventListener('click', () => {
     activatePredecessor(predecessor)
@@ -23,8 +24,7 @@ const activatePredecessor = (predecessor) => {
   const object = image.querySelector('object')
 
   predecessor.activate().then(_ => {
-    image.style.width = ''
-    image.style.height = ''
+    lightbox.style.opacity = '0'
     object.classList.remove('shadow')
     embed.removeChild(predecessor)
   })

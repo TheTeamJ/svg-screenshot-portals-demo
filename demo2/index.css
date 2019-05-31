@@ -30,10 +30,7 @@ svg {
   max-width: 90vw;
   max-height: calc(100vh - 50px - 50px - 65px - 50px);
   transition:
-    transform 0.4s,
-    bottom 0.7s,
-    left 0.7s,
-    opacity 1.0s;
+    transform 0.5s;
   transform: scale(0.7);
 }
 
