@@ -8,4 +8,5 @@ $ sh run.sh
 ```
 
 ## Demo
-- http://localhost:8000/demo1.html
+- http://localhost:8000/demo1/
+- http://localhost:8000/demo2/
