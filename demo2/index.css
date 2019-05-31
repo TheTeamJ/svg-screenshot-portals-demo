@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #303030;
+}
+
+#navbar {
+  height: 50px;
+  background-color: #424242;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.title {
+  color: #ddd;
+  padding: 14px;
+}
+
+portal {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: absolute;
+}
+
+svg {
+  max-width: 90vw;
+  max-height: calc(100vh - 50px - 50px - 65px - 50px);
+  transition:
+    transform 0.4s,
+    bottom 0.7s,
+    left 0.7s,
+    opacity 1.0s;
+  transform: scale(0.7);
+}
+
+.portal-reveal {
+  transform: scale(.95);
+}
+
+div#image {
+  position: relative;
+  margin: auto;
+  display: flex;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 50px);
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>svg screenshot portals demo</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css" />
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=yes">
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="title">SVG Screenshot</div>
+    </div>
+    <div id="image">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 539" width="870" height="539" x="0" y="0">
+        <foreignObject x="0" y="0" width="100%" height="100%">
+          <portal src="http://localhost:8080/images/frame.html"></portal>
+        </foreignObject>
+      </svg>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
