@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>svg screenshot portals demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script defer="" src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header is-small-screen is-upgraded">
+      <header class="mdl-layout__header is-casting-shadow">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title" id="site-title" title="">
+            daiiz blog
+          </span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div id="main">
+          <div class="article">
+            <span class="title">Portals demo</span>
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line half-line"></div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              viewBox="0 0 571 506" height="300" class="svg">
+              <foreignObject x="0" y="0" width="100%" height="100%">
+                <portal src="http://localhost:8080/images/frame.html?src=svg2"></portal>
+              </foreignObject>
+            </svg>
+
+            <div class="lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line half-line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line half-line"></div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              viewBox="0 0 715 545" height="300" class="svg">
+              <foreignObject x="0" y="0" width="100%" height="100%">
+                <portal src="http://localhost:8080/images/frame.html?src=svg3"></portal>
+              </foreignObject>
+            </svg>
+
+            <div class="lines">
+              <div class="line half-line"></div>
+              <div class="line"></div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              viewBox="0 0 870 539" height="300" class="svg">
+              <foreignObject x="0" y="0" width="100%" height="100%">
+                <portal src="http://localhost:8080/images/frame.html"></portal>
+              </foreignObject>
+            </svg>
+
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line half-line"></div>
+                <div class="line"></div>
+              </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

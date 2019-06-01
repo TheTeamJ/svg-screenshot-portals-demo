@@ -4,15 +4,27 @@
     <title>image</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./frame.css" />
+    <style>
+      object {
+        visibility: hidden;
+      }
+    </style>
   </head>
   <body>
     <div id="image">
       <center>
-        <object data="./svg1.svg" type="image/svg+xml"></object>
+        <object type="image/svg+xml"></object>
       </center>
     </div>
     <div id="lightbox"></div>
     <div id="embed"></div>
     <script src="./frame.js"></script>
+    <script>
+      const svgFilename = location.search.split("?src=")[1] || 'svg1'
+      const path = `./${svgFilename}.svg`
+      const object = document.querySelector('object')
+      object.data = path
+      object.style.visibility = 'visible'
+    </script>
   </body>
 </html>
