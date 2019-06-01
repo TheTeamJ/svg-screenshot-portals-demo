@@ -24,7 +24,9 @@
       const path = `./${svgFilename}.svg`
       const object = document.querySelector('object')
       object.data = path
-      object.style.visibility = 'visible'
+      object.onload = () => {
+        object.style.visibility = 'visible'
+      }
     </script>
   </body>
 </html>
