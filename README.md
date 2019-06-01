@@ -2,6 +2,7 @@
 
 ## Run local server
 Servers starts at port 8000 and 8080.
+
 The server with port 8080 assumes an external site embedded in the `<portal>` element.
 ```
 $ sh run.sh
@@ -10,3 +11,4 @@ $ sh run.sh
 ## Demo
 - http://localhost:8000/demo1/
 - http://localhost:8000/demo2/
+- http://localhost:8000/demo3/
